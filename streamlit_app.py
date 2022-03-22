@@ -35,4 +35,4 @@ In this section, please enter the characteristics of the weather today
 
 
 dewpoint = st.number_input('Dew',value=1)
-humidity = st.slider('Humidity',df['humidity'].min(),df['humidity'].max(),1)
+humidity = st.slider('Humidity',df['humidity'].min(),df['humidity'].max(),1.0)
