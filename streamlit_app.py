@@ -24,7 +24,7 @@ In this app, you will be able to determine if it will rain tomorrow based off of
 
 ''')
 
-df = pd.read_csv('training_data.csv')
+df = pd.read_csv('training_data.csv',index_col=[0])
 
 st.write(
 '''
@@ -34,4 +34,4 @@ In this section, please enter the characteristics of the weather today
 ''')
 
 
-dewpoint = st.slider('Dew',df['dew'].min(),df['dew'].max(),1)
+dewpoint = st.numberinput('Dew',value=1)
