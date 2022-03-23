@@ -73,10 +73,10 @@ sunrise = 417
 input_data = pd.DataFrame({'Dewpoint':[dewpoint],'Humidity':[humidity],'Precipitation':[precipitation],'Snow':[snow],'Snow Depth':[snow_depth],'Wind Gust':[wind_gust],'Wind Speed':[wind_speed],'winddir':[wind_dir],'Sea Level':[sealevel],'cloudcover':[cloudcover],'visibility':[visibility],'solar_radiation':[solar_radiation],'solar_energy':[solar_energy], 'UV':[UV],'moonphase':[moonphase], 'conditions_value':[conditions_value],'feels_like_value':[feels_like_value],'big_range_value':[big_range_value],'raining_value':[raining_value],'sunset':[sunset],'sunrise':[sunrise]})
 input_data = scaler.fit_transform(input_data)
 
-pred = model.predict(poly_data)[0]
+pred = model.predict(input_data)[0]
 
 
 st.write(
-f'Predicted Popularity of Song: {int(pred):,}'
+f'Predicted Popularity of Song: {pred:,}'
 )
 
