@@ -74,9 +74,10 @@ input_data = pd.DataFrame({'Dewpoint':[dewpoint],'Humidity':[humidity],'Precipit
 input_data = scaler.fit_transform(input_data)
 
 pred = model.predict(input_data)[0]
+if pred = 0:
+    message = 'It will not rain'
+else:
+    message = 'It will rain'
 
-
-st.write(
-f'Predicted Popularity of Song: {pred:,}'
-)
+st.write(message)
 
