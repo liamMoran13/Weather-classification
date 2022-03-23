@@ -47,7 +47,7 @@ cloudcover = st.slider('Cloud Cover',df['cloudcover'].min(),df['cloudcover'].max
 visibility = st.slider('Visibility',df['visibility'].min(),df['visibility'].max(),1.0)
 solar_radiation = st.slider('Solar Radiation',df['solarradiation'].min(),df['solarradiation'].max(),1.0)
 solar_energy = st.slider('Solar Energy',df['solarenergy'].min(),df['solarenergy'].max(),1.0)
-UV = st.slider('UV Index',df['uvindex'].min(),df['uvindex'].max(),1.0)
+UV = st.slider('UV Index',df['uvindex'].min(),df['uvindex'].max(),1)
 moonphase = st.slider('MoonPhase',df['moonphase'].min(),df['moonphase'].max(),.1)
 conditions = st.text_input('Conditions (seperate each condition with a comma',value='')
 feels_like = st.checkbox('Is it warmer than expected')
